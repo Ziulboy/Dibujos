@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñando</title>
     <style>
+        :root {
+            --yellow: #ffd502;
+            --red: #d5040a;
+            --blue: #036cb6;
+        }
         body {
+            background: black;
             height: 100vh;
             margin: 0;
             overflow: hidden;
@@ -19,7 +25,7 @@
             z-index: 1;
         }
         .loader {
-            background: pink;
+            background: silver;
             width: 100%;
             height: 100%;
             display: flex;
@@ -28,7 +34,7 @@
             position: absolute;
             z-index: 3;
 
-            animation: loader 2s linear forwards;
+            animation: loader 4s linear forwards;
         }
         @keyframes loader {
             0% {
@@ -42,6 +48,37 @@
             100% {
                 opacity: 0;
                 visibility: hidden;
+            }
+        }
+        .loader div {
+            background: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 10px;
+
+            transform: scale(0);
+
+            animation: scaling 2s ease-in-out infinite;
+        }
+        .loader div:nth-child(1){
+            animation-delay: 0.2s;
+        }
+        .loader div:nth-child(2){
+            animation-delay: 0.4s;
+        }
+        .loader div:nth-child(3){
+            animation-delay: 0.6s;
+        }
+        @keyframes scaling {
+            0%, 100% {
+                transform: scale(0.2);
+            }
+            40% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1);
             }
         }
     </style>
