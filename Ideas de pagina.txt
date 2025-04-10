@@ -1,0 +1,12 @@
+Nebulosas para pagina de carga
+
+
+Color con forama de pincelado para pagina de carga
+
+Las palabras del Nav esten en un cuadro, contengan imagenes y tengan
+animacion de scroll
+
+El diseño de la pagina principal en las orillas tenga color dorado
+o que contenga animacion de fuego
+
+En la parte izquierda superior ,tenga un diseño de hoja doblada
