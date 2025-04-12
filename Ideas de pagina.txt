@@ -1,5 +1,6 @@
 Nebulosas para pagina de carga
 
+Se necesita modificar varias cosas en la pagina para que sea mas dinamica	
 
 Color con forama de pincelado para pagina de carga
 
