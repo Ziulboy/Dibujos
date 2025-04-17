@@ -234,9 +234,6 @@
                 transform: scale(1);
             }
         }
-<<<<<<< HEAD
-        /* .modal {
-=======
         .hidden {
             display: none !important;
         }
@@ -244,15 +241,11 @@
             display: grid !important;
         }
         .modal {
->>>>>>> 7d94d8e9ed31e021a67c79e061213651bc601cc9
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
             position: absolute;
             z-index: 2;
-<<<<<<< HEAD
-        } */
-=======
 
             display: grid;
             place-items: center;
@@ -280,6 +273,21 @@
             position: relative;
             width: 100%;
             height: 100%;
+        }
+        .cards label img {
+            width: 150px;
+            position: absolute;
+            bottom: 30px;
+            transform: translateY(0px) scale(1);
+            transition: transform 0.5s ease-in-out;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
         }
         .card {
             background: var(--yellow);
@@ -315,7 +323,11 @@
             opacity: 0.5;
             z-index: 0;
         }
->>>>>>> 7d94d8e9ed31e021a67c79e061213651bc601cc9
+        @media (max-width: 360px) {
+            .cards {
+                display: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -375,16 +387,17 @@
                     <input type="radio" name="slider-1" id="radio-1" checked>
                     <input type="radio" name="slider-1" id="radio-2">
                     <input type="radio" name="slider-1" id="radio-3">
+                    <input type="button" name="Lo quiero" id="">
 
                     <div class="cards">
                         <label for="radio-1" id="card-1" class="card">
-                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="spiderman-telaraña">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="spider-telaraña">
                         </label>
                         <label for="radio-2" id="card-2" class="card">
-                            <img src="" alt="">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="spiderma-escudo">
                         </label>
                         <label for="radio-3" id="card-3" class="card">
-                            <img src="" alt="">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="spiderman-normal">
                         </label>
                     </div>
                 </div>
