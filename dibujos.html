@@ -234,13 +234,88 @@
                 transform: scale(1);
             }
         }
+<<<<<<< HEAD
         /* .modal {
+=======
+        .hidden {
+            display: none !important;
+        }
+        .visible {
+            display: grid !important;
+        }
+        .modal {
+>>>>>>> 7d94d8e9ed31e021a67c79e061213651bc601cc9
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
             position: absolute;
             z-index: 2;
+<<<<<<< HEAD
         } */
+=======
+
+            display: grid;
+            place-items: center;
+        }
+        .modal_content {
+            background: white;
+            width: 20%;
+            height: 35%;
+        }
+        .modal_content--close {
+            display: flex;
+            justify-self: end;
+            align-self: flex-start;
+            cursor: pointer;
+        }
+        #radio-1, #radio-2, #radio-3 {
+            display: none;
+        }
+        .modal_content--slider {
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+        }
+        .cards {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .card {
+            background: var(--yellow);
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            width: 50%;
+            height: 100%;
+        }
+        #radio-1:checked ~ .cards #card-1,
+        #radio-2:checked ~ .cards #card-2,
+        #radio-3:checked ~ .cards #card-3 {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+        }
+        #radio-1:checked ~ .cards #card-2,
+        #radio-2:checked ~ .cards #card-3,
+        #radio-3:checked ~ .cards #card-1 {
+            transform: translateX(40%) scale(0.8);
+            opacity: 0.5;
+            z-index: 0;
+        }
+        #radio-1:checked ~ .cards #card-3,
+        #radio-2:checked ~ .cards #card-1,
+        #radio-3:checked ~ .cards #card-2 {
+            transform: translateX(-40%) scale(0.8);
+            opacity: 0.5;
+            z-index: 0;
+        }
+>>>>>>> 7d94d8e9ed31e021a67c79e061213651bc601cc9
     </style>
 </head>
 <body>
@@ -270,17 +345,17 @@
             <section class="side-content">
                 <div></div>
                 <p></p>
-                <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Naruto">
+                <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman">
             </section>
 
             <section class="footer">
-                <div>
+                <div id="button1">
                     <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="spiderman">
                 </div>
-                <div>
+                <div id="button2">
                     <img src="https://i.ibb.co/M18p91c/batman.webp" alt="batman">
                 </div>
-                <div>
+                <div id="button3">
                     <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="robin">
                 </div>
             </section>
@@ -292,7 +367,75 @@
             <div></div>
          </section>
         <!-- Modal -->
-         <section class="modal"></section>
+         <section class="modal hidden">
+            <div class="modal_content">
+                <img class="modal_content--close" src="https://img.icons8.com/windows/32/000000/macos-close.png"/>
+
+                <div class="modal_content--slider">
+                    <input type="radio" name="slider-1" id="radio-1" checked>
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3">
+
+                    <div class="cards">
+                        <label for="radio-1" id="card-1" class="card">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="spiderman-telaraña">
+                        </label>
+                        <label for="radio-2" id="card-2" class="card">
+                            <img src="" alt="">
+                        </label>
+                        <label for="radio-3" id="card-3" class="card">
+                            <img src="" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+         </section>
     </div>
 </body>
+<script>
+    const modal = document.querySelector('.modal')
+    const button1 = document.querySelector('#button1')
+    const closeButton = document.querySelector('.modal_content--close')
+
+    button1.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    closeButton.addEventListener('click', () => {
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    const modal2 = document.querySelector('.modal')
+    const button2 = document.querySelector('#button2')
+    const closeButton2 = document.querySelector('.modal_content--close')
+
+    button2.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    closeButton.addEventListener('click', () => {
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+
+    const modal3 = document.querySelector('.modal')
+    const button3 = document.querySelector('#button3')
+    const closeButton3 = document.querySelector('.modal_content--close')
+
+    button3.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')
+    })
+
+    closeButton.addEventListener('click', () => {
+        console.log('here')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')
+    })
+</script>
 </html>
