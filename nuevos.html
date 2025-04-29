@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñando</title>
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300&display=swap'); */
-        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); */
         :root {
             --yellow: #ffd502;
             --red: #d5040a;
@@ -15,7 +15,8 @@
         body {
             /* color de las orillas de la pagina principal dorado */
             font-family: "Bungee Spice", sans-serif;
-            /* background: #ada03c; */
+            font-weight: 400;
+            /* font-family: "Nabla", system-ui; */
             background: black;
             height: 100vh;
             margin: 0;
@@ -76,7 +77,7 @@
             width: 450px;
         }
         .navbar__content ul li a {
-            color: purple;
+            color: (--red);
             font-weight: 100;
             text-decoration: none;
         }
@@ -342,7 +343,14 @@
                     <img src="https://media.forgecdn.net/avatars/thumbnails/1066/832/256/256/638601049279650112.png" alt="logo">
                     <!-- <img src="https://okdiario.com/img/2021/06/18/-cuantos-tipos-de-nebulosas-existen_-1.jpg" alt="logo"> -->
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </li>
                         <li><a href="diseños.html">Diseños</a></li>
                         <li><a href="">Nuevos</a></li>
                         <li><a href="">Digital</a></li>
