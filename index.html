@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñando</title>
+    <h1 class="nombre">YI EM YI</h1>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:wght@700&display=swap');
 body {
     background: black;
     margin: 0;
@@ -13,14 +15,19 @@ body {
     display: grid;
     place-items: center;
 }
+.nombre {
+    /* font-family: "Bungee Spice", sans-serif; */
+    color: whitesmoke;
+    box-shadow: 0 9px 15px 10px yellow;
+}
 .phone {
     position: relative;
     border: 8px solid black;
     border-radius: 40px;
     height: 600px;
     width: 300px;
-    background: #ccefff;
-    box-shadow: 0 19px 38px gold;
+    background: black;
+    box-shadow: 0 9px 25px 15px gold;
     counter-reset: rabbir;
 }
 .capaVerde::after {
@@ -137,8 +144,8 @@ body {
 }
 .button {
     color: red;
-    background: gold;
-    border-radius: 5px;
+    background: white;
+    border-radius: 10px;
     width: 100px;
     height: 40px;
     display: grid;
@@ -152,6 +159,7 @@ body {
     text-align: center;
     margin-top: 90px;
     justify-content: center;
+    color: white;
 }
 .final {
     text-align: center;
@@ -162,7 +170,7 @@ body {
 </head>
 <body>
     <div class="phone">
-        <div class="capaVerde"></div>
+        <!-- <div class="capaVerde"></div> -->
         <p class="bienvenida">
             
             Gracias por haber entrado a mi pagina,
