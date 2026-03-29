@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,189 +8,207 @@
     <h1 class="nombre">DUL ♥🐥</h1>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:wght@700&display=swap');
-body {
-    background: black;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
-}
-.nombre {
-    /* font-family: "Bungee Spice", sans-serif; */
-    color: whitesmoke;
-    box-shadow: 0 1px 15px 5px deeppink;
-    border: 8px solid black;
-    border-radius: 12px;
-}
-.phone {
-    position: relative;
-    border: 8px solid black;
-    border-radius: 40px;
-    height: 600px;
-    width: 300px;
-    background: black;
-    box-shadow: 0 9px 25px 15px deeppink;
-}
-.capaVerde::after {
-    content: "";
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    height: 55px;
-    background: 
-        linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #67A167 25%, transparent 25%) -35px 0,
-        linear-gradient(45deg, #67A167 25%, transparent 25%),
-        linear-gradient(-45deg, #67A167 25%, transparent 25%);
-    background-size: 20px 90px;
-    border-radius: 40px;
-}
-.capaVerde::before {
-    content: "";
-    position: absolute; 
-    /* left: -0px; */
-    top: 15px;
-    width: 100%;
-    height: 35px;
-    background: 
-        linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
-        linear-gradient(45deg, #a6543d 25%, transparent 25%),
-        linear-gradient(-45deg, #a6543d 25%, transparent 25%);
-    background-size: 30px 100px;
-    border-radius: 10px;
-}
-.layer-5 {
-    position: absolute;
-    z-index: 5;
-    height: 300px;
-    width: 200px;
-    background:brown;
-    bottom: 0;
-    left: 0px;
-    border: solid yellow;
-    border-radius: 28px;
-}
-.capaVerde::after {
-    content: "";
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    height: 55px;
-    background: 
-        linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #67A167 25%, transparent 25%) -35px 0,
-        linear-gradient(45deg, #67A167 25%, transparent 25%),
-        linear-gradient(-45deg, #67A167 25%, transparent 25%);
-    background-size: 20px 90px;
-    border-radius: 40px;
-}
-.capaVerde::before {
-    content: "";
-    position: absolute; 
-    /* left: -0px; */
-    top: 15px;
-    width: 100%;
-    height: 35px;
-    background: 
-        linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
-        linear-gradient(45deg, #a6543d 25%, transparent 25%),
-        linear-gradient(-45deg, #a6543d 25%, transparent 25%);
-    background-size: 30px 100px;
-    border-radius: 10px;
-}
-.layer-7 {
-    position: absolute;
-    z-index: 7;
-    height: 200px;
-    width: 160px;
-    background:brown;
-    bottom: 0;
-    right: 0px;
-    border: solid yellow;
-    border-radius: 28px;
-}
-.capaVerde::after {
-    content: "";
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    height: 55px;
-    background: 
-        linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #67A167 25%, transparent 25%) -25px 0,
-        linear-gradient(45deg, #67A167 25%, transparent 25%),
-        linear-gradient(-45deg, #67A167 25%, transparent 25%);
-    background-size: 20px 90px;
-    border-radius: 40px;
-}
-.capaVerde::before {
-    content: "";
-    position: absolute; 
-    /* left: -0px; */
-    top: 15px;
-    width: 100%;
-    height: 35px;
-    background: 
-        linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
-        linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
-        linear-gradient(45deg, #a6543d 25%, transparent 25%),
-        linear-gradient(-45deg, #a6543d 25%, transparent 25%);
-    background-size: 30px 100px;
-    border-radius: 10px;
-}
-.button {
-    color: red;
-    background: white;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    padding: 0;
-}
-.button a {
-    text-decoration: none;
-    color: black;
-}
-.bienvenida {
-    text-align: center;
-    margin-top: 90px;
-    justify-content: center;
-    color: palevioletred;
-}
-.final {
-    text-align: center;
-    margin-top: 90px;
-    justify-content: center;
-}
+
+        body {
+            background: black;
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .nombre {
+            /* font-family: "Bungee Spice", sans-serif; */
+            color: deeppink;
+            box-shadow: 0 1px 15px 5px deeppink;
+            border: 8px solid black;
+            border-radius: 12px;
+        }
+
+        .phone {
+            position: relative;
+            border: 8px solid black;
+            border-radius: 40px;
+            height: 600px;
+            width: 300px;
+            background: black;
+            box-shadow: 0 9px 25px 15px deeppink;
+        }
+
+        .capaVerde::after {
+            content: "";
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            height: 55px;
+            background:
+                linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #67A167 25%, transparent 25%) -35px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+            background-size: 20px 90px;
+            border-radius: 40px;
+        }
+
+        .capaVerde::before {
+            content: "";
+            position: absolute;
+            /* left: -0px; */
+            top: 15px;
+            width: 100%;
+            height: 35px;
+            background:
+                linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
+                linear-gradient(45deg, #a6543d 25%, transparent 25%),
+                linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+            background-size: 30px 100px;
+            border-radius: 10px;
+        }
+
+        .layer-5 {
+            position: absolute;
+            z-index: 5;
+            height: 300px;
+            width: 200px;
+            background: brown;
+            bottom: 0;
+            left: 0px;
+            border: solid yellow;
+            border-radius: 28px;
+        }
+
+        .capaVerde::after {
+            content: "";
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            height: 55px;
+            background:
+                linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #67A167 25%, transparent 25%) -35px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+            background-size: 20px 90px;
+            border-radius: 40px;
+        }
+
+        .capaVerde::before {
+            content: "";
+            position: absolute;
+            /* left: -0px; */
+            top: 15px;
+            width: 100%;
+            height: 35px;
+            background:
+                linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
+                linear-gradient(45deg, #a6543d 25%, transparent 25%),
+                linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+            background-size: 30px 100px;
+            border-radius: 10px;
+        }
+
+        .layer-7 {
+            position: absolute;
+            z-index: 7;
+            height: 200px;
+            width: 160px;
+            background: brown;
+            bottom: 0;
+            right: 0px;
+            border: solid yellow;
+            border-radius: 28px;
+        }
+
+        .capaVerde::after {
+            content: "";
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            height: 55px;
+            background:
+                linear-gradient(135deg, #67A167 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #67A167 25%, transparent 25%) -25px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+            background-size: 20px 90px;
+            border-radius: 40px;
+        }
+
+        .capaVerde::before {
+            content: "";
+            position: absolute;
+            /* left: -0px; */
+            top: 15px;
+            width: 100%;
+            height: 35px;
+            background:
+                linear-gradient(135deg, #a6543d 25%, transparent 25%) -10px 0,
+                linear-gradient(-135deg, #a6543d 25%, transparent 25%) -35px 0,
+                linear-gradient(45deg, #a6543d 25%, transparent 25%),
+                linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+            background-size: 30px 100px;
+            border-radius: 10px;
+        }
+
+        .button {
+            color: red;
+            background: white;
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            padding: 0;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .bienvenida {
+            text-align: center;
+            margin-top: 90px;
+            justify-content: center;
+            color: palevioletred;
+        }
+
+        .final {
+            text-align: center;
+            margin-top: 90px;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="phone">
         <!-- <div class="capaVerde"></div> -->
         <p class="bienvenida">
-            
-            Espero que te guste este pequeño detalle que hice pensando en ti, es algo momentaneo y no esta terminado , pero quiero que veas las cosas que me gustaria y estaria dispuesto ah hacer por ti.
+
+            Espero que te guste este pequeño detalle que hice pensando en ti, es algo momentaneo y no esta terminado ,
+            pero quiero que veas las cosas que me gustaria y estaria dispuesto ah hacer por ti.
 
 
 
 
-                        Con el corazon en la mano... de la persona que un dia te vio bailar y no ah dejado de pensar en ti
+            Con el corazon en la mano... de la persona que un dia te vio bailar y no ah dejado de pensar en ti
 
 
         </p>
         <P class="final">Bienvenida bienvenido</P>
-        </div>
-        <!-- <div id="animacion-completado" class="hidden">Comenzar</div> -->
-        <button class="button">
-            <a href="dibujos.html">Comenzar</a>
-        </button>
+    </div>
+    <!-- <div id="animacion-completado" class="hidden">Comenzar</div> -->
+    <button class="button">
+        <a href="dibujos.html">Comenzar</a>
+    </button>
     </div>
 </body>
+
 </html>

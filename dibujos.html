@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <style>
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300&display=swap'); */
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:wght@700&display=swap');
+
         :root {
             --yellow: #ffd502;
             --red: #d5040a;
             --blue: #036cb6;
         }
+
         body {
             /* color de las orillas de la pagina principal dorado */
             font-family: "Bungee Spice", sans-serif;
@@ -21,16 +24,20 @@
             margin: 0;
             overflow: hidden;
         }
+
         .page {
             position: relative;
             height: 100vh;
             width: 100%;
         }
+
         .container_pagina {
             display: flex;
             justify-items: flex-end;
         }
-        .container, .container_pagina{
+
+        .container,
+        .container_pagina {
             position: absolute;
             z-index: 1;
 
@@ -38,16 +45,18 @@
             grid-template-columns: 55% 45%;
             grid-template-rows: 20% 50% 30%;
             grid-template-areas: "nav    aside"
-                                "section aside"
-                                "footer  aside";
+                "section aside"
+                "footer  aside";
 
-            height: 100%;                                
+            height: 100%;
             width: 100%;
         }
+
         .navbar {
             /* background: green; */
             grid-area: nav;
         }
+
         .navbar__content {
             display: flex;
             align-items: center;
@@ -56,18 +65,22 @@
 
             animation: 3s navbar 0.9s ease-in-out;
         }
+
         @keyframes navbar {
             0% {
                 transform: translateY(-200px);
             }
+
             100% {
                 transform: translateY(0px);
 
             }
         }
+
         .navbar__content image {
             width: 50px;
         }
+
         .navbar__content ul {
             display: flex;
             justify-content: space-evenly;
@@ -75,18 +88,21 @@
             padding: 0;
             width: 450px;
         }
+
         .navbar__content ul li a {
             color: purple;
             font-weight: 100;
             text-decoration: none;
         }
+
         .side-content {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             align-items: center;
 
             grid-area: aside;
-        } 
+        }
+
         .side-content p {
             /* transform: rotate(-90deg); */
             font-size: 20px;
@@ -102,14 +118,17 @@
             animation-timing-function: ease-in-out;
             animation-fill-mode: forwards;
         }
+
         @keyframes side-content-text {
             0% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 1;
             }
         }
+
         .side-content img {
             width: 100%;
             grid-column: 2 / 6;
@@ -117,15 +136,18 @@
 
             animation: 3s side-content-img 1s ease-in-out;
         }
+
         @keyframes side-content-img {
             100% {
                 transform: translateY(0px);
             }
+
             0% {
                 transform: translateY(600px);
 
             }
         }
+
         .side-content div {
             background: var(--yellow);
 
@@ -133,8 +155,9 @@
             grid-row: 1 / 2;
 
             height: 100vh;
-            
+
         }
+
         .footer {
             display: flex;
             justify-content: space-evenly;
@@ -144,21 +167,24 @@
             border-radius: 0 50px 0 0;
             transform: translateY(100%);
 
-            animation-name: footer ;
+            animation-name: footer;
             animation-duration: 0.8s;
             animation-delay: 2.5s;
             animation-timing-function: ease-in-out;
             animation-fill-mode: forwards;
         }
+
         @keyframes footer {
             0% {
                 transform: translateY(100%);
             }
+
             100% {
                 transform: translateY(0px);
 
             }
         }
+
         .footer div {
             background: var(--blue);
             width: 135px;
@@ -167,11 +193,13 @@
             display: flex;
             justify-content: center;
         }
+
         .footer div:hover img {
             cursor: pointer;
             transform: translateY(-20px) scale(1.1);
             transition: transform 0.3s ease-in-out;
         }
+
         .footer div img {
             width: 150px;
             position: absolute;
@@ -180,6 +208,7 @@
             transform: translateY(0px) scale(1);
             transition: transform 0.5s ease-in-out;
         }
+
         .loader {
             background: #100525;
             width: 100%;
@@ -192,20 +221,24 @@
 
             animation: loader 2s linear forwards;
         }
+
         @keyframes loader {
             0% {
                 opacity: 1;
                 visibility: visible;
             }
+
             95% {
                 opacity: 1;
                 visibility: visible;
             }
+
             100% {
                 opacity: 0;
                 visibility: hidden;
             }
         }
+
         .loader div {
             background: white;
             width: 40px;
@@ -217,32 +250,43 @@
 
             animation: scaling 2s ease-in-out infinite;
         }
-        .loader div:nth-child(1){
+
+        .loader div:nth-child(1) {
             animation-delay: 0.2s;
         }
-        .loader div:nth-child(2){
+
+        .loader div:nth-child(2) {
             animation-delay: 0.4s;
         }
-        .loader div:nth-child(3){
+
+        .loader div:nth-child(3) {
             animation-delay: 0.6s;
         }
+
         @keyframes scaling {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(0.2);
             }
+
             40% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1);
             }
         }
+
         .hidden {
             display: none !important;
         }
+
         .visible {
             display: grid !important;
         }
+
         .modal {
             width: 100%;
             height: 100%;
@@ -253,30 +297,38 @@
             display: grid;
             place-items: center;
         }
+
         .modal_content {
             background: white;
             width: 20%;
             height: 35%;
         }
+
         .modal_content--close {
             display: flex;
             justify-self: end;
             align-self: flex-start;
             cursor: pointer;
         }
-        #radio-1, #radio-2, #radio-3 {
+
+        #radio-1,
+        #radio-2,
+        #radio-3 {
             display: none;
         }
+
         .modal_content--slider {
             width: 300px;
             height: 200px;
             transform-style: preserve-3d;
         }
+
         .cards {
             position: relative;
             width: 100%;
             height: 100%;
         }
+
         .cards label img {
             width: 150px;
             position: absolute;
@@ -284,14 +336,17 @@
             transform: translateY(0px) scale(1);
             transition: transform 0.5s ease-in-out;
         }
+
         * {
             margin: 0;
             padding: 0;
         }
+
         img {
             overflow-clip-margin: content-box;
             overflow: clip;
         }
+
         .card {
             background: var(--yellow);
             position: absolute;
@@ -305,27 +360,31 @@
             width: 50%;
             height: 100%;
         }
-        #radio-1:checked ~ .cards #card-1,
-        #radio-2:checked ~ .cards #card-2,
-        #radio-3:checked ~ .cards #card-3 {
+
+        #radio-1:checked~.cards #card-1,
+        #radio-2:checked~.cards #card-2,
+        #radio-3:checked~.cards #card-3 {
             transform: translateX(0) scale(1);
             opacity: 1;
             z-index: 1;
         }
-        #radio-1:checked ~ .cards #card-2,
-        #radio-2:checked ~ .cards #card-3,
-        #radio-3:checked ~ .cards #card-1 {
+
+        #radio-1:checked~.cards #card-2,
+        #radio-2:checked~.cards #card-3,
+        #radio-3:checked~.cards #card-1 {
             transform: translateX(40%) scale(0.8);
             opacity: 0.5;
             z-index: 0;
         }
-        #radio-1:checked ~ .cards #card-3,
-        #radio-2:checked ~ .cards #card-1,
-        #radio-3:checked ~ .cards #card-2 {
+
+        #radio-1:checked~.cards #card-3,
+        #radio-2:checked~.cards #card-1,
+        #radio-3:checked~.cards #card-2 {
             transform: translateX(-40%) scale(0.8);
             opacity: 0.5;
             z-index: 0;
         }
+
         @media (max-width: 360px) {
             .cards {
                 display: column;
@@ -333,6 +392,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="page">
         <!-- Main content -->
@@ -359,7 +419,7 @@
             <section class="side-content">
                 <div></div>
                 <p></p>
-                <img src="./osos.png" alt="OSO">
+                <img src="./oso.jpg" alt="OSO">
             </section>
 
             <section class="footer">
@@ -375,15 +435,15 @@
             </section>
         </section>
         <!-- Loader -->
-         <section class="loader">
+        <section class="loader">
             <div></div>
             <div></div>
             <div></div>
-         </section>
+        </section>
         <!-- Modal -->
-         <section class="modal hidden">
+        <section class="modal hidden">
             <div class="modal_content">
-                <img class="modal_content--close" src="https://img.icons8.com/windows/32/000000/macos-close.png"/>
+                <img class="modal_content--close" src="https://img.icons8.com/windows/32/000000/macos-close.png" />
 
                 <div class="modal_content--slider">
                     <input type="radio" name="slider-1" id="radio-1" checked>
@@ -393,18 +453,21 @@
 
                     <div class="cards">
                         <label for="radio-1" id="card-1" class="card">
-                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="spider-telaraña">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png"
+                                alt="spider-telaraña">
                         </label>
                         <label for="radio-2" id="card-2" class="card">
-                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="spiderma-escudo">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png"
+                                alt="spiderma-escudo">
                         </label>
                         <label for="radio-3" id="card-3" class="card">
-                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="spiderman-normal">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png"
+                                alt="spiderman-normal">
                         </label>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
     </div>
 </body>
 <script>
@@ -453,4 +516,5 @@
         modal.classList.remove('visible')
     })
 </script>
+
 </html>
